@@ -1,5 +1,8 @@
 # Island Population Dynamics Simulation
 
+![Flowchart](/img/topic1_flowchart.png)
+
+
 ## Overview
 Simulate how rabbit and wolf populations evolve over 20 years on an island.  
 - Rabbits start first and grow annually.  
