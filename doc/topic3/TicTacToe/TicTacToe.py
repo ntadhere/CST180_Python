@@ -12,7 +12,7 @@ class TicTacToe:
         if self.board[row][column].state != CellStates.OPEN:
             return False
         
-        self.board[row][column] = cellState
+        self.board[row][column].state = cellState
         return True
     
     def GetWinStatus(self):
@@ -40,7 +40,7 @@ class TicTacToe:
         return sum(1 for row in self.board for cell in row if cell.state == CellStates.OPEN)
 
     @staticmethod
-    def ConvertCellStateToWinStatus (cellState):
+    def ConvertCellStateToWinState (cellState):
         if cellState == CellStates.PLAYER1:
             return WinStatus.PLAYER1
         elif cellState == CellStates.PLAYER2:
