@@ -11,6 +11,10 @@ def Main():
             gameBoard.OpenCell() > 0):
         DisplayBoard(gameBoard)
 
+        CellStates = CellStates.PLAYER1 if isPlayer1 else CellStates.PLAYER2
+        if isPlayer1:
+            row,col = GetUserInput("Player 1")
+
 def DisplayBoard(tttObj):
     board = tttObj.board
     print("   0   1   2   ")
@@ -27,4 +31,16 @@ def GetCellOutput(cell):
             CellStates.COMPUTER:  "O"
         }.get(cell.state)
     
+def GetUserInput(playerStr):
+    while True:
+        try:
+            row = int(input(f"{playerStr}, enter row (0-2): "))
+            col = int(input(f"{playerStr}, enter col (0-2): "))
+            if 0 <= row <= 2 and 0 <= col <= 2:
+                return row, col
+            print("Invalid input: Enter numbers between 0 and 2.")
+        
+        except:
+            print("Invalid input. Please enter a number")
+            
 Main()
