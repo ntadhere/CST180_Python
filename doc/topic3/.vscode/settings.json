@@ -2,7 +2,7 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./NumericConversion",
+        "./ClosestPair",
         "-p",
         "*_test.py"
     ],
