@@ -1,5 +1,0 @@
-This is a test file.
-
-If all goes well it should count
-
-17 words and 5 lines.
