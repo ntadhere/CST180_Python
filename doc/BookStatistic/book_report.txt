@@ -1,0 +1,4 @@
+Average Publication Year: 1925.4
+Average Number of Pages: 320.0
+Book with Most Pages: Title: The Lord of the Rings: The Fellowship of the Ring, Author: J.R.R. Tolkien, Year: 1954, Pages: 492
+Book with Least Pages: Title: The Catcher in the Rye, Author: J.D. Salinger, Year: 1951, Pages: 220
