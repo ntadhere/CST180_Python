@@ -2,7 +2,7 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        ".",
+        "./AnimalKennelApp",
         "-p",
         "*_test.py"
     ],
